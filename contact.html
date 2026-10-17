@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Dr. S. Ahmad</title>
+<meta name="description" content="Contact Dr. S. Ahmad — book orders, QalamPress publishing, mentoring enquiries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#fdfcf8;--card:#fff;--ink:#16211d;--muted:#5c6b64;--line:#e6dfd0;--emerald:#173e33;--gold:#b98a1e;--radius:18px}
+  *{box-sizing:border-box}body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75;margin:0}
+  .serif{font-family:'Libre Baskerville',Georgia,serif}
+  .wrap{max-width:780px;margin:0 auto;padding:28px 20px 70px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:36px 32px;box-shadow:0 4px 24px rgba(23,62,51,.06)}
+  h1{color:var(--emerald);margin:0 0 6px;font-size:1.9rem}
+  a{color:var(--emerald);font-weight:600}
+  label{display:block;font-weight:600;margin:16px 0 5px}
+  input,select,textarea{width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff}
+  textarea{min-height:140px;resize:vertical}
+  button{background:var(--emerald);color:#fff;border:0;border-radius:10px;padding:13px 28px;font:inherit;font-weight:700;cursor:pointer;margin-top:18px}
+  button:hover{background:#1e5945}
+  .note{background:#fdf3d7;border:1px solid #ecd9a0;border-radius:10px;padding:14px 18px;margin-top:24px;font-size:.95rem}
+  header.site{background:var(--emerald);color:#fff;padding:18px 0}
+  header.site .wrap{padding-top:0;padding-bottom:0;display:flex;justify-content:space-between;align-items:center}
+  header.site a{color:#fff;text-decoration:none;font-weight:700}
+  header.site nav a{margin-left:18px;font-weight:500;font-size:.95rem}
+  .back{display:inline-block;margin-top:28px}
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a href="/" class="serif">Dr. S. Ahmad</a>
+  <nav><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a></nav>
+</div></header>
+<div class="wrap"><div class="card">
+  <h1 class="serif">Contact</h1>
+  <p>Book orders, QalamPress projects, mentoring sessions, or anything else — send a message below. It opens <strong>your own email app</strong> with everything addressed; nothing is stored on this page, and you decide what to send.</p>
+
+  <form id="cf">
+    <label for="name">Your name</label>
+    <input id="name" required autocomplete="name">
+    <label for="topic">Topic</label>
+    <select id="topic">
+      <option>Book or planner order</option>
+      <option>QalamPress publishing service</option>
+      <option>Mentoring session</option>
+      <option>Speaking / collaboration</option>
+      <option>Other</option>
+    </select>
+    <label for="msg">Message</label>
+    <textarea id="msg" required placeholder="Tell me what you're looking for…"></textarea>
+    <button type="submit">Open email app to send</button>
+  </form>
+
+  <div class="note">Prefer the guided route? Use the <a href="/#books">Enquiry Basket</a> on the homepage to attach specific books or services to your message.</div>
+
+  <p style="color:var(--muted);font-size:.92rem;margin-top:18px">I usually reply within 2–3 days. For anything urgent, mention it in your subject line.</p>
+
+  <a class="back" href="/">← Back to homepage</a>
+</div></div>
+<script>
+document.getElementById('cf').addEventListener('submit',function(e){
+  e.preventDefault();
+  var n=document.getElementById('name').value.trim(),
+      t=document.getElementById('topic').value,
+      m=document.getElementById('msg').value.trim();
+  location.href='mailto:?subject='+encodeURIComponent('['+t+'] — '+n)+'&body='+encodeURIComponent('Name: '+n+'\nTopic: '+t+'\n\n'+m);
+});
+</script>
+</body>
+</html>
