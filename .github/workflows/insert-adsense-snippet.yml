@@ -1,0 +1,40 @@
+name: Insert AdSense verification snippet
+
+on:
+  workflow_dispatch:
+
+jobs:
+  insert-snippet:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Insert AdSense script after meta charset
+        run: |
+          python3 - <<'PYEOF'
+          snippet = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6074529967639717" crossorigin="anonymous"></script>'
+          path = 'index.html'
+          with open(path, encoding='utf-8') as f:
+              text = f.read()
+          if 'ca-pub-6074529967639717' not in text:
+              anchor = '<meta charset="utf-8" />'
+              assert anchor in text, 'anchor line not found'
+              text = text.replace(anchor, anchor + '\n' + snippet, 1)
+              with open(path, 'w', encoding='utf-8') as f:
+                  f.write(text)
+          with open(path, encoding='utf-8') as f:
+              assert 'ca-pub-6074529967639717' in f.read(), 'snippet missing after insert'
+          print('AdSense snippet present in index.html')
+          PYEOF
+      - name: Commit and push
+        run: |
+          git config user.name "DrSAhmad"
+          git config user.email "DrSAhmad@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Add AdSense verification script"
+            git push
+          fi
