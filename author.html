@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Saghir Ahmad | Author, Psychologist & Islamic Scholar</title>
+    <meta name="description" content="Books, journals and printable tools by Dr. Saghir Ahmad — psychologist, educationist, Islamic scholar and author. Paperbacks and Kindle books on Amazon, journals and planners on Gumroad, plus free learning resources.">
+    <meta name="keywords" content="Dr. Saghir Ahmad, Overcome Fear, The Night Desk, High Five, The Deciding Heart, 2027 journal, printable planners, Mindful Designes">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#15803d',
+                            600: '#166534',
+                            700: '#14532d',
+                            900: '#052e16',
+                        },
+                        gold: '#c9a227'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .title-panel {
+            background: linear-gradient(135deg, #14532d 0%, #166534 55%, #c9a227 130%);
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <div class="w-10 h-10 rounded-full bg-brand-700 text-white flex items-center justify-center font-serif text-xl font-bold">S</div>
+                    <span class="font-serif font-bold text-xl text-slate-900 tracking-tight">Dr. Saghir Ahmad</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">About</a>
+                    <a href="#products" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Products</a>
+                    <a href="#books" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Books on Kindle</a>
+                    <a href="#free" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Free Resources</a>
+                    <a href="https://mindfuldesignes.gumroad.com/" target="_blank" rel="noopener" class="bg-brand-700 hover:bg-brand-600 text-white px-5 py-2.5 rounded-full font-medium transition-all shadow-sm">Shop on Gumroad</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menuBtn" class="text-slate-600 hover:text-brand-600 focus:outline-none" aria-label="Open menu">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden pb-4 flex flex-col gap-3 text-slate-600 font-medium">
+                <a href="#about" class="hover:text-brand-600">About</a>
+                <a href="#products" class="hover:text-brand-600">Products</a>
+                <a href="#books" class="hover:text-brand-600">Books on Kindle</a>
+                <a href="#free" class="hover:text-brand-600">Free Resources</a>
+                <a href="https://mindfuldesignes.gumroad.com/" target="_blank" rel="noopener" class="text-brand-700 font-semibold">Shop on Gumroad</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
+                <div class="w-full lg:w-3/5 fade-in">
+                    <div class="inline-block px-4 py-1.5 rounded-full bg-brand-50 text-brand-700 font-semibold text-sm mb-6 border border-brand-100">
+                        <i class="fas fa-book-open mr-2 text-brand-500"></i> Books, journals &amp; printable tools
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-slate-900 leading-tight mb-6">
+                        Practical books &amp; tools for a <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-gold">calmer, stronger life</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-600 mb-8 max-w-2xl leading-relaxed">
+                        By Dr. Saghir Ahmad — psychologist, educationist, Islamic scholar and author. Books on fear, character and self-belief, plus journals and printable planners made to be used every day.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3 max-w-xl">
+                        <a href="https://mindfuldesignes.gumroad.com/" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-brand-700 hover:bg-brand-600 text-white px-6 py-3 rounded-xl font-semibold transition-colors shadow-md">
+                            Visit the Gumroad store <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://drsahmad.github.io/drsahmad-website/journal.html" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-brand-50 text-brand-700 border border-brand-200 px-6 py-3 rounded-xl font-semibold transition-colors">
+                            Get the free 2027 journal
+                        </a>
+                    </div>
+                    <p class="mt-6 text-sm text-slate-500 max-w-xl">Every button below goes to its real store page — Amazon for books, Gumroad for journals and planners. Free resources are marked free.</p>
+                </div>
+                <div class="w-full lg:w-2/5 fade-in" style="animation-delay: 0.2s;">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-brand-500 rounded-full blur-3xl opacity-20 transform translate-x-10 translate-y-10"></div>
+                        <div class="relative z-10 rounded-2xl shadow-2xl border-8 border-white title-panel p-10 text-white">
+                            <p class="font-serif text-3xl font-bold leading-snug">Overcome Fear</p>
+                            <p class="mt-3 text-white/85">Psychological &amp; Islamic Guide</p>
+                            <p class="mt-6 text-sm text-white/75">Paperback on Amazon · PDF edition on Gumroad</p>
+                            <a href="https://www.amazon.com/dp/B0HP5MN129" target="_blank" rel="noopener" class="mt-6 inline-block bg-white text-brand-900 font-semibold px-5 py-2.5 rounded-lg">Paperback — $19.99</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <h2 class="text-brand-600 font-semibold tracking-wide uppercase text-sm mb-3">About the author</h2>
+                <h3 class="text-3xl font-serif font-bold text-slate-900 mb-4">Dr. Saghir Ahmad</h3>
+                <p class="text-lg text-slate-600 leading-relaxed">Psychologist, educationist, Islamic scholar and author. Founder of Shaheen Academy, a free e-learning platform, and Islam, a free Islamic companion. His books bring psychology and Islamic teaching together on fear, character, patience and self-belief.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-24 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-brand-600 font-semibold tracking-wide uppercase text-sm mb-3">Journals &amp; printables</h2>
+                <h3 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">Tools made to be used daily</h3>
+                <p class="text-lg text-slate-600">Printable journals, trackers and planners on Gumroad. Instant download after purchase.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Overcome Fear PDF -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative h-48 title-panel flex items-center justify-center p-6">
+                        <p class="font-serif text-2xl font-bold text-white text-center leading-snug">Overcome Fear<br><span class="text-base font-sans font-medium text-white/85">PDF Edition</span></p>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-slate-900 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">PDF</div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h4 class="text-xl font-bold text-slate-900 mb-2 font-serif">Overcome Fear — PDF Edition</h4>
+                        <p class="text-slate-600 text-sm flex-1 mb-6">Fear psychology with Islamic tawakkul, dhikr and qadr, with a 30-day plan and workbook tools. The paperback is also on Amazon.</p>
+                        <a href="https://mindfuldesignes.gumroad.com/l/onsuheu" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-700 hover:text-white text-brand-700 border border-brand-200 font-semibold px-4 py-3 rounded-xl transition-colors">
+                            $7 on Gumroad <i class="fas fa-external-link-alt text-sm"></i>
+                        </a>
+                        <a href="https://www.amazon.com/dp/B0HP5MN129" target="_blank" rel="noopener" class="mt-3 text-center text-sm font-medium text-slate-500 hover:text-brand-700">Paperback $19.99 on Amazon →</a>
+                    </div>
+                </div>
+
+                <!-- 2027 Journal -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative h-48 title-panel flex items-center justify-center p-6">
+                        <p class="font-serif text-2xl font-bold text-white text-center leading-snug">2027 Mindfulness<br>&amp; Self-Care Journal</p>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-slate-900 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">68 pages · A4</div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h4 class="text-xl font-bold text-slate-900 mb-2 font-serif">2027 Mindfulness &amp; Self-Care Journal</h4>
+                        <p class="text-slate-600 text-sm flex-1 mb-6">A 68-page A4 journal for mindfulness and self-care through the year ahead.</p>
+                        <a href="https://mindfuldesignes.gumroad.com/l/oiegxf" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-700 hover:text-white text-brand-700 border border-brand-200 font-semibold px-4 py-3 rounded-xl transition-colors">
+                            $7 on Gumroad <i class="fas fa-external-link-alt text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- My Daily Balance -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative h-48 title-panel flex items-center justify-center p-6">
+                        <p class="font-serif text-2xl font-bold text-white text-center leading-snug">My Daily Balance</p>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-slate-900 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">3-in-1 Pack</div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h4 class="text-xl font-bold text-slate-900 mb-2 font-serif">My Daily Balance</h4>
+                        <p class="text-slate-600 text-sm flex-1 mb-6">A 3-in-1 printable tracker pack for keeping each day in balance.</p>
+                        <a href="https://mindfuldesignes.gumroad.com/l/dfgty" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-700 hover:text-white text-brand-700 border border-brand-200 font-semibold px-4 py-3 rounded-xl transition-colors">
+                            $5 on Gumroad <i class="fas fa-external-link-alt text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 30 Days of Calm -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative h-48 title-panel flex items-center justify-center p-6">
+                        <p class="font-serif text-2xl font-bold text-white text-center leading-snug">30 Days of Calm</p>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-slate-900 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">Morning Routine Cards</div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h4 class="text-xl font-bold text-slate-900 mb-2 font-serif">30 Days of Calm</h4>
+                        <p class="text-slate-600 text-sm flex-1 mb-6">Printable morning routine cards for thirty calmer mornings.</p>
+                        <a href="https://mindfuldesignes.gumroad.com/l/rnvsr" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-700 hover:text-white text-brand-700 border border-brand-200 font-semibold px-4 py-3 rounded-xl transition-colors">
+                            $5 on Gumroad <i class="fas fa-external-link-alt text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Evening Unwind -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative h-48 title-panel flex items-center justify-center p-6">
+                        <p class="font-serif text-2xl font-bold text-white text-center leading-snug">The Evening Unwind</p>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-slate-900 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">Night Reflection Journal</div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h4 class="text-xl font-bold text-slate-900 mb-2 font-serif">The Evening Unwind</h4>
+                        <p class="text-slate-600 text-sm flex-1 mb-6">A printable night reflection journal for closing each day well.</p>
+                        <a href="https://mindfuldesignes.gumroad.com/l/fylrkh" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-700 hover:text-white text-brand-700 border border-brand-200 font-semibold px-4 py-3 rounded-xl transition-colors">
+                            $5 on Gumroad <i class="fas fa-external-link-alt text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Screen-Free Sundays -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative h-48 title-panel flex items-center justify-center p-6">
+                        <p class="font-serif text-2xl font-bold text-white text-center leading-snug">Screen-Free Sundays</p>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-slate-900 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">Digital Detox Planner</div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h4 class="text-xl font-bold text-slate-900 mb-2 font-serif">Screen-Free Sundays</h4>
+                        <p class="text-slate-600 text-sm flex-1 mb-6">A printable digital detox planner for one screen-free day a week.</p>
+                        <a href="https://mindfuldesignes.gumroad.com/l/uzqkdc" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-700 hover:text-white text-brand-700 border border-brand-200 font-semibold px-4 py-3 rounded-xl transition-colors">
+                            $5 on Gumroad <i class="fas fa-external-link-alt text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- My Stress Reset -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col">
+                    <div class="relative h-48 title-panel flex items-center justify-center p-6">
+                        <p class="font-serif text-2xl font-bold text-white text-center leading-snug">My Stress Reset</p>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur text-slate-900 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">Breathing &amp; Grounding Sheets</div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h4 class="text-xl font-bold text-slate-900 mb-2 font-serif">My Stress Reset</h4>
+                        <p class="text-slate-600 text-sm flex-1 mb-6">Printable breathing and grounding sheets, with a stress log.</p>
+                        <a href="https://mindfuldesignes.gumroad.com/l/zgynuw" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-700 hover:text-white text-brand-700 border border-brand-200 font-semibold px-4 py-3 rounded-xl transition-colors">
+                            $5 on Gumroad <i class="fas fa-external-link-alt text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Membership wide card -->
+            <div class="mt-8 bg-white rounded-2xl shadow-sm border border-slate-100 p-8 flex flex-col md:flex-row md:items-center gap-6">
+                <div class="flex-1">
+                    <h4 class="text-2xl font-bold text-slate-900 font-serif mb-2">Mindful Printables Club</h4>
+                    <p class="text-slate-600 text-sm max-w-xl">A monthly membership for printable packs, delivered inside the club.</p>
+                </div>
+                <a href="https://mindfuldesignes.gumroad.com/l/bztfys" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold px-6 py-3 rounded-xl transition-colors shadow-md whitespace-nowrap">
+                    $15/month on Gumroad <i class="fas fa-external-link-alt text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books on Kindle -->
+    <section id="books" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl mb-12">
+                <h2 class="text-brand-600 font-semibold tracking-wide uppercase text-sm mb-3">Books on Kindle</h2>
+                <h3 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">Also on Amazon</h3>
+                <p class="text-lg text-slate-600">Kindle editions by Dr. Saghir Ahmad.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 p-8 flex flex-col">
+                    <h4 class="text-xl font-bold text-slate-900 font-serif mb-2">The Night Desk</h4>
+                    <p class="text-slate-600 text-sm flex-1 mb-6">A literary sci-fi novel.</p>
+                    <a href="https://www.amazon.com/dp/B0H4V43ZL9" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-brand-700 hover:bg-brand-600 text-white font-semibold px-5 py-3 rounded-xl transition-colors">Kindle — $2.99 <i class="fas fa-external-link-alt text-sm"></i></a>
+                </div>
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 p-8 flex flex-col">
+                    <h4 class="text-xl font-bold text-slate-900 font-serif mb-2">High Five</h4>
+                    <p class="text-slate-600 text-sm flex-1 mb-6">A book by Dr. Saghir Ahmad.</p>
+                    <a href="https://www.amazon.com/dp/B0HLN3PFLC" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-brand-700 hover:bg-brand-600 text-white font-semibold px-5 py-3 rounded-xl transition-colors">Kindle — $2.99 <i class="fas fa-external-link-alt text-sm"></i></a>
+                </div>
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 p-8 flex flex-col">
+                    <h4 class="text-xl font-bold text-slate-900 font-serif mb-2">The Deciding Heart</h4>
+                    <p class="text-slate-600 text-sm flex-1 mb-6">A book by Dr. Saghir Ahmad.</p>
+                    <a href="https://www.amazon.com/dp/B0HM31QHSC" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-brand-700 hover:bg-brand-600 text-white font-semibold px-5 py-3 rounded-xl transition-colors">Kindle — $9.99 <i class="fas fa-external-link-alt text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Resources -->
+    <section id="free" class="py-24 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl mb-12">
+                <h2 class="text-brand-600 font-semibold tracking-wide uppercase text-sm mb-3">Free, forever</h2>
+                <h3 class="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">Free resources</h3>
+                <p class="text-lg text-slate-600">No purchase needed for any of these.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 flex flex-col">
+                    <h4 class="text-lg font-bold text-slate-900 font-serif mb-2">Shaheen Academy</h4>
+                    <p class="text-slate-600 text-sm flex-1 mb-6">Free e-learning platform: Pakistani curriculum Class 1–12, test prep and skills courses.</p>
+                    <a href="https://drsahmad.github.io/shaheen-academy/" target="_blank" rel="noopener" class="font-semibold text-brand-700 hover:text-brand-600">Open free →</a>
+                </div>
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 flex flex-col">
+                    <h4 class="text-lg font-bold text-slate-900 font-serif mb-2">Islam — Islamic Companion</h4>
+                    <p class="text-slate-600 text-sm flex-1 mb-6">A free Islamic companion: Quran, prayer times, tasbih and learning.</p>
+                    <a href="https://drsahmad.github.io/islam/" target="_blank" rel="noopener" class="font-semibold text-brand-700 hover:text-brand-600">Open free →</a>
+                </div>
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 flex flex-col">
+                    <h4 class="text-lg font-bold text-slate-900 font-serif mb-2">Free Daily Planner</h4>
+                    <p class="text-slate-600 text-sm flex-1 mb-6">A free daily-page maker: pick a layout, fill in your day, print or download one free page.</p>
+                    <a href="https://muse.ai/s/free-daily-planner-xuxo6ux0rxlxnwxdxq/ZePXYWXCGY4cNqdlnlCjx61jZ06otWse5x2kapNQzpc" target="_blank" rel="noopener" class="font-semibold text-brand-700 hover:text-brand-600">Open free →</a>
+                </div>
+                <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 flex flex-col">
+                    <h4 class="text-lg font-bold text-slate-900 font-serif mb-2">Milo's World Videos</h4>
+                    <p class="text-slate-600 text-sm flex-1 mb-6">Free kids' cartoons on YouTube: Milo, a baby monkey learning one good habit per episode.</p>
+                    <a href="https://www.youtube.com/@milosworld-adventure" target="_blank" rel="noopener" class="font-semibold text-brand-700 hover:text-brand-600">Watch free →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="bg-brand-900 text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Browse the full collection</h2>
+            <p class="text-white/70 text-lg mb-8">Journals, planners and memberships on Gumroad, books on Amazon, and free resources above.</p>
+            <a href="https://mindfuldesignes.gumroad.com/" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-3 bg-white text-brand-900 text-lg font-bold px-8 py-4 rounded-xl transition-all hover:-translate-y-1">
+                Explore the Gumroad store <i class="fas fa-shopping-bag"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 rounded-full bg-brand-700 text-white flex items-center justify-center font-serif font-bold text-sm">S</div>
+                        <span class="font-serif font-bold text-lg text-slate-900">Dr. Saghir Ahmad</span>
+                    </div>
+                    <p class="text-slate-500 text-sm max-w-sm mb-6">
+                        Psychologist, educationist, Islamic scholar and author. Books, journals and printable tools made to be genuinely useful.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/in/saghir-ahmad-454059445/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center hover:bg-brand-700 hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.pinterest.com/leaderoftime786/" target="_blank" rel="noopener" aria-label="Pinterest" class="w-10 h-10 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center hover:bg-brand-700 hover:text-white transition-colors"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://www.tiktok.com/@professorahmadrafique" target="_blank" rel="noopener" aria-label="TikTok" class="w-10 h-10 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center hover:bg-brand-700 hover:text-white transition-colors"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@milosworld-adventure" target="_blank" rel="noopener" aria-label="YouTube" class="w-10 h-10 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center hover:bg-brand-700 hover:text-white transition-colors"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-4">Products</h5>
+                    <ul class="space-y-3 text-sm text-slate-500">
+                        <li><a href="https://mindfuldesignes.gumroad.com/l/onsuheu" target="_blank" rel="noopener" class="hover:text-brand-600 transition-colors">Overcome Fear — PDF</a></li>
+                        <li><a href="https://mindfuldesignes.gumroad.com/l/oiegxf" target="_blank" rel="noopener" class="hover:text-brand-600 transition-colors">2027 Journal</a></li>
+                        <li><a href="https://mindfuldesignes.gumroad.com/l/dfgty" target="_blank" rel="noopener" class="hover:text-brand-600 transition-colors">My Daily Balance</a></li>
+                        <li><a href="https://mindfuldesignes.gumroad.com/l/bztfys" target="_blank" rel="noopener" class="hover:text-brand-600 transition-colors">Mindful Printables Club</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-slate-900 mb-4">Resources</h5>
+                    <ul class="space-y-3 text-sm text-slate-500">
+                        <li><a href="https://drsahmad.github.io/shaheen-academy/" target="_blank" rel="noopener" class="hover:text-brand-600 transition-colors">Shaheen Academy</a></li>
+                        <li><a href="https://drsahmad.github.io/islam/" target="_blank" rel="noopener" class="hover:text-brand-600 transition-colors">Islam Companion</a></li>
+                        <li><a href="https://drsahmad.github.io/drsahmad-website/journal.html" target="_blank" rel="noopener" class="hover:text-brand-600 transition-colors">Free 2027 Journal</a></li>
+                        <li><a href="https://mindfuldesignes.gumroad.com/" target="_blank" rel="noopener" class="hover:text-brand-600 transition-colors">Gumroad Store</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
+                <p>&copy; 2026 Dr. Saghir Ahmad. All rights reserved.</p>
+                <p>Books, journals &amp; printable tools.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
